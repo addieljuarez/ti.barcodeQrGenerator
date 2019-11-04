@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 4
+architectures: arm64-v8a armeabi-v7a x86
+description: dwdw
+author: Addiel Juarez
+license: dwdw
+copyright: Copyright (c) 2019 by Your Company
+
+# these should not be edited
+name: tibarcode
+moduleid: ti.barcode
+guid: d4a32c0e-dc7a-4b15-9a95-5ce2ba943608
+platform: android
+minsdk: 8.0.2.GA
