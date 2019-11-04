@@ -373,5 +373,22 @@ function parseResult(event) {
     return msg;
 }
 
+
+
+
+// create QR code in base 64
+// enerateCode( "textCode in string", int _width, int _height)
+var qrCode = Barcode.generateCode('text Code demo',  500,  500);
+
+var imageQrCode = Ti.UI.imageView({
+    image: Ti.Utils.base64decode(qrCode),
+    height: 350,
+    width: 350,
+});
+
+scrollView.add(imageQrCode);
+
+
+
 window.add(scrollView);
 window.open();
